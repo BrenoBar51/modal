@@ -1,13 +1,12 @@
 const modal = document.querySelector('#modal')
-const enviar = document.getElementById('enviar')
+const btn = document.getElementById('btn')
+const openModal = document.getElementById('openModal')
+const fechar = document.getElementById('fechar')
+const closeModal = document.querySelector('#closeModal')
+
 function handleModal() {
     modal.classList.toggle('modalOpen')
 }
-function alerta(){
-    alert("Enviado")
-}
-input.addEventListener("click",() => {
-    if(true){
-        console.log('click')
-    }
-});
+
+btn.addEventListener("click", handleModal)
+fechar.addEventListener("click", handleModal)
